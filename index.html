@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Azure Fundamentals</title>
+    <title style="color: #0078d4;">Welcome to Azure Fundamentals</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
         
@@ -22,7 +22,7 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #000;
+            color: #0078d4; /* Azure blue */
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -36,18 +36,19 @@
         .container {
             text-align: center;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(12px);
         }
         table {
             width: 100%;
             margin-top: 20px;
             border-collapse: collapse;
+            background-color: #fff;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ddd;
             text-align: left;
         }
@@ -57,47 +58,84 @@
             font-weight: bold;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
         }
         h2 {
             color: #0078d4;
             font-weight: bold;
             margin-top: 20px;
         }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .footer a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Accessibility Enhancements */
+        a:focus, button:focus, input:focus {
+            outline: 3px solid #0078d4;
+            outline-offset: 2px;
+        }
+        img {
+            alt: "Azure Image";
+        }
+        table {
+            border: 1px solid #ddd;
+        }
+        th {
+            scope: "col";
+        }
+        td {
+            scope: "row";
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="color: #000;">Welcome to Azure Fundamentals</h1>
+        <h1 style="color: #0078d4;">Welcome to Azure Fundamentals</h1>
         <img src="https://th.bing.com/th/id/R.8199521862f49b1c29761be7a93afc8e?rik=An70THgSb556Ag&pid=ImgRaw&r=0" alt="Azure Image">
         
         <h2>Workshop Agenda</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Day</th>
-                    <th>AM Session</th>
-                    <th>PM Session</th>
+                    <th scope="col">Day</th>
+                    <th scope="col">AM Session</th>
+                    <th scope="col">PM Session</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Day 1</td>
+                    <td scope="row">Day 1</td>
                     <td>Introduction to Azure</td>
                     <td>Azure Fundamentals</td>
                 </tr>
                 <tr>
-                    <td>Day 2</td>
+                    <td scope="row">Day 2</td>
                     <td>Azure Services Overview</td>
                     <td>Hands-on Labs</td>
                 </tr>
                 <tr>
-                    <td>Day 3</td>
+                    <td scope="row">Day 3</td>
                     <td>Advanced Azure Topics</td>
                     <td>Q&A and Wrap-up</td>
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Azure Tech Fundamentals. All rights reserved.</p>
+        <p><a href="https://azure.microsoft.com">Visit Azure</a></p>
     </div>
 </body>
 </html>
